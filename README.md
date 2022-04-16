@@ -16,6 +16,9 @@
 ![20220416_190326](https://user-images.githubusercontent.com/80815667/163673928-1fe15546-121a-4e83-a4bf-aa0f0b3a6438.gif)
 
 
+### demo地址
+
+https://ceichaox.github.io/CC.io/
 
 ### 使用手册：
 直接使用主题包内的-config中的代码替换hugo原本的config进行设置
