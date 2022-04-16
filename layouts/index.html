@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" sizes="any" mask="" href="./image/icon/icon-b.png" >
+    
+    <title>C</title>
+    <!-- index  -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+<body>
+    <div id="index-in" >
+        <div id="rorate" >
+            <video autoplay="autoplay" loop="loop" >
+                <source src="./mp4/rorate.mp4" type="video/mp4"  >
+            </video>
+        </div>
+    <div>
+        <div>
+            <div id="index-z-title" >
+                welcome
+            </div>
+            <ul id="index-z-content" >
+                 <a>Ich bin Ceichaox</a> <br>
+                <a>ein Forschungsreisende</a> 
+            </ul>
+        </div>
+        <div id="index-z-hidden" >
+            <img id="index-z-line1" src="./image/icon/warnning-line.png" >
+            <img id="index-z-line2" src="./image/icon/warnning-line.png" >
+        </div>
+    </div>
+    <div id="index-chose">
+        <div id="index-chose-blog">
+            
+          <div >
+            {{ range where .Pages "Section" "blog" }}   
+            <div>
+                <a href="{{.Permalink}}">
+                    <img src="./image/icon/index-chose.png" >
+                    <p class="index-chose-title" >blog</p>
+                </a>
+            </div>
+                {{ end }}
+          </div> 
+        </div>
+     <br>
+     <div id="index-chose-work">
+        
+          <div>
+            {{ range where .Pages "Section" "work" }}
+            <div >
+                <a href="{{.Permalink}}">
+                    <img src="./image/icon/index-chose.png" >
+                    <p class="index-chose-title" >work</p>
+                </a>
+            </div>
+            {{ end }}
+          </div>
+     </div>
+    <br>
+          <div id="index-chose-timeline">
+              
+              <div>
+                {{ range where .Pages "Section" "timeline"}}
+                <div>
+                 <a href="{{.Permalink}}"  >
+                    <img src="./image/icon/index-chose.png" >
+                    <p class="index-chose-title" style="margin-left: 4.5vw;">Timeline</p>
+                </a>
+                </div>
+                {{ end }}
+              </div>
+           
+          </div>
+      
+    </div>  
+    
+    
+    <div id="index-d" >
+        <h id="index-d-title">link</h>
+        <br>
+        <div>
+            <a id="index-d-github" href="https://github.com/Ceichaos" ><img src="./image/icon/github.png"></a>
+        <a id="index-d-csdn" href="https://blog.csdn.net/Cei_Chaos" ><img src="./image/icon/csdn.png"></a>
+        <a id="index-d-gitee" href="https://gitee.com/Ceichaos" ><img src="./image/icon/gitee.png"></a>
+        </div>
+        <br>
+        <div id="index-d-author" ><h>@Ceichaos</h>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h>2022-02-10</h></div>
+        
+        <br>
+       <h id="index-d-statement">Powered by Hexo. Theme by Ceichaox</h>
+    </div>
+</div>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

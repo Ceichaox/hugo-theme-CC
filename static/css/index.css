@@ -1,0 +1,195 @@
+body {
+    margin: 0px; 
+    padding: 0px;   
+    background-color: #333333;
+    overflow: none;
+    color: white;
+    }
+
+body-t {
+        margin: 0px; 
+        padding: 0px;   
+        background-color: #333333;
+        overflow: hidden;
+        color: white;
+        }
+a {
+    color: white;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    line-height: 3vh;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    font-family: SourceHanSansCN-Bold;
+    line-height: 3.8vh;
+}
+
+span {
+    font-family: HiJack-2;
+    font-size: 32px;
+    
+}
+
+@font-face {
+    font-family: HiJack-2;
+    src: url('../font/HiJack-2.ttf');   
+}
+
+@font-face {
+    font-family: Rigelstar-2;
+    src: url('../font/Rigelstar-2.otf');   
+}
+
+@font-face {
+    font-family: SourceHanSansCN-Bold;
+    src: url('../font/SourceHanSansCN-Bold.otf');
+}
+
+@font-face {
+    font-family: SourceHanSansCN-Normal;
+    src: url('../font/SourceHanSansCN-Normal.otf')  ;
+}
+
+/* index */
+
+#index-in {
+    width: 100vw;
+    height: 135.2vh;
+    overflow: hidden;
+    background-image: url('../image/icon/index-b.png');
+    position: absolute;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+}
+
+#rorate {
+    position: absolute;
+    z-index: -2;
+    mix-blend-mode: screen;
+    transform: scale(1.4);
+    /* width: 500vh;
+    height: 500vh; */
+    
+}
+
+
+#index-z-title {
+    
+    padding-top: 5vh;
+    margin-left: 3.6vw;
+    font-size: 40px;
+    text-shadow:  1px 1px #ffffff;
+    font-family: Rigelstar-2;
+}
+
+#index-z-content {
+    margin-top: 15vh;
+    margin-left: 10vw;
+    font-family:  HiJack-2;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    text-shadow: 3px 3px 3px #000000;
+    
+}
+
+#index-z-hidden {
+    overflow: hidden;
+}
+
+#index-z-line1 {
+    top: 10vh;
+    left: -2vw;
+    height: 5vw;
+    transform: rotate(-10deg);
+    position: absolute;
+    z-index: -1;
+}
+
+#index-z-line2 {
+    top: 147vh;
+    left: -15vw;
+    height: 5vw;
+    transform: rotate(30deg);
+    position: absolute;
+    z-index: -1;
+}
+
+#index-d {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -1;
+    left: 5vw;
+    bottom: 14vh;
+    font-size: 16px;
+}
+
+#index-d-title {
+    font-size: 30px;
+    font-family: HiJack-2;
+
+}
+
+#index-d-icon {
+margin: 10px;
+}
+#index-d-github {
+    margin: 10px;
+}
+
+#index-d-csdn {
+    margin: 3px;
+}
+
+#index-d-gitee {
+    margin: 3px;
+}
+
+#index-d-author {
+    margin: 0%;
+    flex-direction: row;
+}
+#index-chose{
+    height:70vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+#index-chose-blog{
+    margin-top: 0vh;
+    margin-right: 3vw;
+}
+#index-chose-work{
+    margin-top: 5vh;
+    margin-right: 9vw;
+}
+#index-chose-timeline{
+    
+    margin-top: 5vh;
+    margin-right: 15vw;
+}
+
+.index-chose-title{
+    margin-top: -11vh;
+    margin-left: 6vw;
+    font-size: 40px;
+    font-family: HiJack-2;
+}
+

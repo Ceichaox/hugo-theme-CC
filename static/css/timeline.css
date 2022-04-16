@@ -1,0 +1,204 @@
+body {
+    margin: 0px; 
+    padding: 0px;   
+    background-color: #333333;
+    overflow: hidden;
+    color: white;
+    }
+
+    body-t {
+        margin: 0px; 
+        padding: 0px;   
+        background-color: #333333;
+        overflow: hidden;
+        color: white;
+        }
+a {
+    color: white;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    line-height: 3vh;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    font-family: SourceHanSansCN-Bold;
+    line-height: 3.8vh;
+}
+
+span {
+    font-family: HiJack-2;
+    font-size: 32px;
+    
+}
+
+p {
+    margin-top: 5px;
+    line-height: 32px;
+}
+@font-face {
+    font-family: HiJack-2;
+    src: url('../font/HiJack-2.ttf');   
+}
+
+@font-face {
+    font-family: Rigelstar-2;
+    src: url('../font/Rigelstar-2.otf');   
+}
+
+@font-face {
+    font-family: SourceHanSansCN-Bold;
+    src: url('../font/SourceHanSansCN-Bold.otf');
+}
+
+@font-face {
+    font-family: SourceHanSansCN-Normal;
+    src: url('../font/SourceHanSansCN-Normal.otf')  ;
+}
+
+
+
+
+/* timeline */
+
+#timeline-backbutton {
+    background-color: rgb(255, 255, 255,0.1);
+    color: white;
+    width: 7.8vw;
+    height: 6.5vh;
+    font-family: HiJack-2;
+    font-size: 24px;
+    border: none;
+    position: absolute;
+    z-index: 1;
+    left: 6vw;
+    bottom: 4.3vh; 
+}
+
+
+
+#timeline-background {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    margin:0;
+    background-image: linear-gradient(90deg, #333333, #000000);
+    overflow: hidden;
+    display: flex;
+}
+
+#warnning-line-w {
+    height: 5vw;
+    position: absolute;
+    z-index: 2;
+    left: -165vw;
+    top: 14vh;
+
+}
+
+#warnning-line-h {
+    height: 5vw;
+    position: absolute;
+    z-index: 1;
+    left: -73.5vw;
+    top: 15vh;
+    transform: rotate(90deg);
+}
+
+#timeline-title {
+    position: absolute;
+    font-size: 32px;
+    top: 5.6vh;
+    left: 6.2vw;
+    font-family:  HiJack-2;
+}
+
+#timeline-area-hidden {
+    width: 50vw;
+    height: 88vh;
+    overflow: scroll;
+    margin-top: 6vh;
+    margin-left: 11vw;
+}
+
+#timeline-area {
+    width: 50vw;
+    height: 88vh;
+    overflow: scroll;
+    float: left;
+}
+
+#timeline-line {
+    height: 1200px;
+    width: 2px;
+    float: left;
+    background-color: #f39800;
+}
+
+#timeline-timekey {
+    float: left;
+    display: flex;
+    margin-left: 0.5vw;
+    margin-top: 0;
+    align-items: flex-start;
+    background: url('../image/icon/timekey.png'), repeat-y;
+    width: 1vw;
+    height: 110vh;
+}
+
+#timeline-timechart {
+    
+    float: left;
+    width: 40vw;
+    margin-left: 1vw;
+    margin-top: -2vh;
+    font-size: 18px;
+    font-family: SourceHanSansCN-Bold;
+
+}
+
+#timeline-timechart-text {
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+#timeline-right {
+    float: left;
+    width: 10vw;
+    height: 17vh;
+    border: 3px ;
+    margin-left: -10vw;
+    border-image: -webkit-linear-gradient(0deg,rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 0.5) 5%, rgba(20, 20, 20, 1) 10%, rgb(243,152,0,1))  50 20;;
+    border-style: solid;
+    
+}
+
+#timeline-produce {
+    width: 17vw;
+    margin-top: 27vh;
+    margin-left: 1.5vw;
+    
+}
+
+#timeline-left {
+   display: flex;
+   top: 0;
+   left: 0;
+}
+
+#timeline-earth {
+    position: absolute;
+    z-index: 1;
+    mix-blend-mode: screen;
+    right: -52vw;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="icon" sizes="any" mask="" href="../image/icon/icon-b.png" >
+    <title>C</title>
+    <!-- work -->
+    <link rel="stylesheet" type="text/css" href="../css/work.css">
+</head>
+<body >
+    <img  id="work-background" src="../image/icon/work-background.png">
+<div>
+<div class="work-list">
+    <img id="work-icon" src="../image/icon/work-icon.png" >
+    
+        <ul id="work-ul">
+            <li class="work-list-style">
+                <a href="#" onclick="project()">project </a>
+            </li>
+            <li class="work-list-style">
+                <a href="#" onclick="mmd()">MMD </a>
+            </li>
+            <span id="work-span" ></span>
+        </ul>
+</div>
+<div >
+            <button id="work-backbutton" onclick="back()" >back</button>
+</div>
+<div id="work-workarea" >
+    
+      
+<img id="work-openline-up" src="../image/icon/work-openline.png" >
+  
+<div id="work-apart">
+    <div id="work-apart-project"  >
+    <!-- "Section" "project" -->
+    
+    {{ range where .Site.Pages "Params.series" "project" }}
+    
+    <div class="work-doucument">
+        
+        <a  class="work-doucument-title"  href="{{.Permalink}}">
+            <img class="work-doucument-img" src="../image/icon/doucument.png">
+            <div class="work-doucument-text">
+                {{.Title}}
+            </div>
+        </a>
+    </div>{{ end }}
+    
+    </div>
+
+    <div id="work-apart-MMD"  >
+        <!-- "Section" "MMD" -->
+        
+        {{ range where .Site.Pages "Params.series" "mmd" }}
+        
+        <div class="work-doucument">
+            
+            <a  class="work-doucument-title"  href="{{.Permalink}}">
+                <img class="work-doucument-img" src="../image/icon/doucument.png">
+                <div class="work-doucument-text">
+                {{.Title}}
+                </div>
+            </a>
+        </div>{{ end }}
+        
+    </div>
+</div>
+
+
+<img id="work-openline-down" src="../image/icon/work-openline.png" >
+
+
+
+</div>
+
+</div>
+
+
+<script>
+    
+    function back(){
+        window.location.href = "../";
+    }
+    function project(){
+        document.getElementById("work-span").style.top = "-3.6em";
+        document.getElementById("work-apart-project").style.marginTop = "0";
+        
+    }
+    function mmd(){
+        document.getElementById("work-span").style.top = "-1.1em";
+        document.getElementById("work-apart-project").style.marginTop = "-75vh";
+        
+    }
+   
+</script>
+</body>
+</html>

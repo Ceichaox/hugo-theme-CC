@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" sizes="any" mask="" href="../../../image/icon/icon-b.png" >
+    <title>C</title>
+    <!-- work-detail -->
+    <link rel="stylesheet" type="text/css" href="../../../css/work.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body >
+    <img  id="work-detail-background-frame" src="../../../image/icon/work-detail-background-frame.png" >
+    <img  id="work-detail-background-icon"  src="../../../image/icon/work-detail-background-icon.png"   >
+
+    
+    <div >
+        
+        
+        <div >
+        <button id="work-detail-backbutton" onclick="back()">back</button>
+        </div>
+    <div class="work-hidden">
+        <div class="work-text">
+           
+        <h2 class="work-text-title">{{ .Title }}</h2>
+        <div id="work-detail-line"></div>
+        <div class="work-text-text">{{.Content}}
+        </div> 
+        </div>
+    </div>
+        
+        <div >
+        <img  id="work-detail-top" src="../../../image/icon/arrow.png"  >
+        
+        
+        </div>
+
+            
+   
+    </div>
+
+<script>
+    function back(){
+        window.location.href = "../../";
+    };
+    
+    
+    var top = document.getElementById("work-detail-top");
+    top.onclick = function (){
+        $(document).ready(function(){
+		$(".work-text").animate({scrollTop:0},500);
+    });
+};
+    
+</script>
+</body>
+</html>

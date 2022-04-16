@@ -1,0 +1,3 @@
+baseURL = './themes/CC/layouts/index.html'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
