@@ -16,4 +16,15 @@
 
 ![图片](https://user-images.githubusercontent.com/80815667/163672845-c77e61f7-b875-4906-9c1e-0347da24401e.png)
 
+代码开源
+Apache许可
+使用代码请注明原作者
+感谢支持
 建议使用谷歌浏览器进行浏览，最后请大家多多支持
+
+### 参与贡献
+Ceichaox
+  
+### 支持一下
+
+![图片](https://user-images.githubusercontent.com/80815667/163672981-1e3761d5-7656-4efc-a7c4-9b4bd2b1b3a8.png)
