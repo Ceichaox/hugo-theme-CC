@@ -6,10 +6,13 @@
 
 ### 设计尺寸：1920*1080
 
+### 介绍页
+
+![发布页1](https://user-images.githubusercontent.com/80815667/163673209-7bcb2f43-41be-492b-a2db-e005fb17ae5f.png)
+
 
 
 ### 线上效果
-
 
 ### 使用手册：
 直接使用主题包内的-config中的代码替换hugo原本的config进行设置
